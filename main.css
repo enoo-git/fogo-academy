@@ -100,6 +100,10 @@ h1 {
     cursor: pointer;
 }
 
+iframe {
+    max-width: 100% !important;
+}
+
 
 .text-underline {
     text-decoration: underline !important;
