@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #020617 !important;
+    color: #fff !important;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+h1 {
+    text-align: center;
+    color: #fff !important;
+}
+
+.courses {
+    border-left: 2px solid #fff;
+    padding-left: 80px;
+    font-size: 22px
+}
+
+.summary {
+    font-size: 18px
+}
+
+@media (max-width: 792px) {
+    .courses {
+        padding-left: 0;
+        border-left:0;
+        border-top:2px solid #fff;
+        padding-top: 50px;
+    }
+
+    .summary {
+        padding-bottom: 30px;
+    }
+}
+
+.courses p {
+    font-size: 22px;
+}
+
+.swal2-container button {
+    background-color: #ff3d00 !important;
+    color:#fff !important;
+}
+
+.swal2-container a {
+    text-decoration: none;
+    color:#fff;
+}
+
+.summary a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.summary-curent {
+    color:#ff3d00 !important;
+}
+
+.quiz-container {
+    border: 2px solid #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 792px) {
+    .quiz-container {
+        padding: 1rem;
+    }
+}
+
+.question {
+    margin-bottom: 1rem;
+}
+
+.choices label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.submitquizz {
+    background-color: #ff3d00;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.text-underline {
+    text-decoration: underline !important;
+}
+
+.degree {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    background-color: #ff3d00;
+    color:#fff;
+    padding: 10px;
+    border:none;
+    border-radius: 5px;
+}
+
+section .custom-card {
+    position: relative;
+    z-index: 555;;
+    box-shadow: 0.063em 0.75em 1.563em rgba(0, 0, 0, 0.78);
+    border-radius: 2.25rem;
+    height: 100%;
+}
+
+section .custom-card::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 2.25rem;
+    z-index: -1;
+    border: 0.155rem solid transparent;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+
+section .custom-card-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8em 0.5em 0em 1.5em;
+}
+
+section .custom-card-header .date {
+    color: #ddd;
+}
+
+.custom-card a {
+    text-decoration: none;
+}
+
+section .custom-card-header svg {
+    color: #fff;
+    width: 2.5rem;
+    cursor: pointer;
+}
+
+section .custom-card-body {
+    width: 100%;
+    display: block;
+    padding: 0.7em 1.25em 0.5em 1.5em;
+}
+
+section .custom-card-body h3 {
+    color: #fff;
+    font-size: 1.375rem;
+    margin-top: 0.625em;
+    margin-bottom: 0.188em;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+section .custom-card-body p {
+    color: #ddd;
+    font-size: 1rem;
+    letter-spacing: 0.031rem;
+}
+
+section .custom-card-body .custom-progress {
+    margin-top: 0.938rem;
+}
+
+section .custom-card-body .custom-progress .progress-bar {
+    position: relative;
+    width: 100%;
+    background: #363636;
+    height: 0.313rem;
+    display: block;
+    border-radius: 3.125rem;
+}
+
+section .custom-card-body .custom-progress .progress-bar:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    display: block;
+    border-radius: 3.125rem;
+}
+
+section .custom-card-body .custom-progress span:first-of-type {
+    color: #fff;
+    text-align: left;
+    font-weight: 600;
+    width: 100%;
+    display: block;
+    margin-bottom: 0.313rem;
+}
+
+section .custom-card-body .custom-progress span {
+    margin-top: 0.313rem;
+    text-align: right;
+    display: block;
+    color: #fff;
+}
+
+section .custom-card-footer {
+    width: 100%;
+    border-top: 0.063rem solid #292929;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7em 1.25em 0.5em 1.5em;
+    background: #151419;
+    border-bottom-left-radius: 2.25rem;
+    border-bottom-right-radius: 2.25rem;
+}
+
+section .custom-card-footer ul {
+    display: flex;
+    align-items: center;
+}
+
+section .custom-card-footer ul li {
+    list-style-type: none;
+    display: flex;
+    margin-right: -0.625rem;
+}
+
+section .custom-card-footer ul li img {
+    border-radius: 50%;
+    width: 1.875rem;
+    height: 1.875rem;
+    object-fit: cover;
+}
+
+section .custom-card-footer .btn-add {
+    width: 1.375rem;
+    height: 1.375rem;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .custom-card-footer .btn-add svg {
+    width: 1rem;
+}
+
+section .custom-card-footer .btn-countdown {
+    background: #222127;
+    color: #fff;
+    border-radius: 2em;
+    padding: 0.625rem 1.5rem;
+}
+
+section .red {
+    background: radial-gradient(ellipse at right top, #a63d2a82 0%, #151419 47%, #151419 100%);
+}
+
+section .red:before {
+    background: linear-gradient(45deg, #232228, #232228, #232228, #232228, #a63d2a) border-box;
+}
+
+section .red .btn-add {
+    background: #ff3d00;
+}
+
+section .red .progress-bar:after {
+    width: var(--width);
+    background: #ff3d00;
+}
+
+section .red .btn-countdown:hover {
+    background: #ff3d00;
+}
